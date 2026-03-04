@@ -311,9 +311,10 @@ body.dark-mode .modal-link-outline { border-color: #2a2a2a; color: #888888; }
 body.dark-mode .modal-link-outline:hover { border-color: #c9a84c; color: #c9a84c; }
 
 /* ── cursor ── */
-body.dark-mode .cursor-dot { background: #c9a84c; }
-body.dark-mode .cursor-ring { border-color: rgba(201,168,76,0.25); }
-body.dark-mode.cursor-hover .cursor-ring { border-color: #c9a84c; width: 52px; height: 52px; }
+body.dark-mode .cursor-dot { background: #e8e8e8; }
+body.dark-mode .cursor-ring { border-color: rgba(232,232,232,0.4); }
+body.dark-mode.cursor-hover .cursor-ring { border-color: #ffffff; width: 52px; height: 52px; }
+body.dark-mode #cursor { mix-blend-mode: normal; }
 
 /* ── photo swap ── */
 body.dark-mode .about-photo.light-photo { display: none; }

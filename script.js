@@ -25,10 +25,12 @@ document.querySelectorAll('a, button, .value-card, .skill-capsule, .project-card
 (function() {
   const btn = document.getElementById('theme-toggle');
   if (!btn) return;
-  // Restore saved preference
-  if (localStorage.getItem('theme') === 'dark') {
+  // Only go dark if user explicitly chose dark — default is always light
+  const saved = localStorage.getItem('theme');
+  if (saved === 'dark') {
     document.body.classList.add('dark-mode');
   }
+  // If no saved preference, stay light (do nothing)
   btn.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
     localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');

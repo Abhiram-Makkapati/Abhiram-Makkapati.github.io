@@ -168,9 +168,9 @@ const SKILLS = [
   { name: 'Git & GitHub', cat: 'tools',   catLabel: 'Dev Tools',  level: 0.87 },
   { name: 'GitLab',       cat: 'tools',   catLabel: 'Dev Tools',  level: 0.82 },
   { name: 'VS Code',      cat: 'tools',   catLabel: 'Dev Tools',  level: 0.92 },
-  { name: 'PowerShell',   cat: 'tools',   catLabel: 'Dev Tools',  level: 0.68 },
-  { name: 'Bash',         cat: 'tools',   catLabel: 'Dev Tools',  level: 0.72 },
-  { name: 'Terminal',     cat: 'tools',   catLabel: 'Dev Tools',  level: 0.78 },
+  { name: 'PowerShell',       cat: 'tools', catLabel: 'Dev Tools', level: 0.68 },
+  { name: 'Bash',             cat: 'tools', catLabel: 'Dev Tools', level: 0.72 },
+  { name: 'Terminal',         cat: 'tools', catLabel: 'Dev Tools', level: 0.78 },
   { name: 'Microsoft Office', cat: 'tools', catLabel: 'Dev Tools', level: 0.88 },
   // CS Fundamentals
   { name: 'Data Structures',    cat: 'cs', catLabel: 'CS Core',   level: 0.85 },
@@ -309,7 +309,7 @@ document.querySelectorAll('.btn-primary, .btn-secondary, .contact-link').forEach
     projects: () => [
       '<span class="t-green">Shipped Projects</span>',
       '  <span class="t-accent">[01] StyleSync</span>    — Flutter + Firebase clothing tracker',
-      '  <span class="t-accent">[02] RideMate</span>     — JS + Firebase campus ride-sharing app',
+      '  <span class="t-accent">[02] RideMate</span>     — JavaScript + Firebase ride-sharing app',
       '  <span class="t-accent">[03] Mahishmathi</span>  — C++ SimCity-style city simulation',
       '  <span class="t-accent">[04] Menu Driven</span>  — Console list manager',
       '  <span class="t-muted">StyleSync:</span> github.com/Abhiram-Makkapati/Stylesync',

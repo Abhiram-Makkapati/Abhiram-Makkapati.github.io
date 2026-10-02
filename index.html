@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20261002-3">
 </head>
 <body>
 
@@ -173,30 +173,24 @@
 
     <!-- SE-LLM Loop -->
     <div class="project-card featured-project" data-project="sellm" tabindex="0" role="article">
-      <div class="featured-project-grid">
-        <div class="project-info">
-          <p class="project-number">01 / 03 · Research</p>
-          <h2 class="project-title">SE-LLM <em>Loop</em></h2>
-          <p class="project-kicker">Automated Software Engineering with Large Language Models · Research under Dr. Junhua Ding</p>
-          <p class="project-impact">A research project focused on making LLM-generated code more reliable through an automated feedback loop. The pipeline gives a software engineering task to a coding model, validates the generated code, runs automated tests and code-quality checks, and returns structured failure feedback for another attempt.</p>
-          <div class="tech-chips">
-            <span class="chip">Python</span><span class="chip">LLMs</span>
-            <span class="chip">Pytest</span><span class="chip">AST</span>
-            <span class="chip">Radon</span><span class="chip">Automated Testing</span>
-          </div>
-          <ul class="project-features">
-            <li>Checks syntax and required program structure before running functional tests</li>
-            <li>Measures test performance, maintainability, and cyclomatic complexity across repeated attempts</li>
-            <li>Compares multiple coding tools and records code, feedback, errors, metrics, and experiment results</li>
-          </ul>
-          <div class="project-actions">
-            <a href="Automated-Software-Engineering-with-LLMs-Poster.pdf" target="_blank" rel="noopener" class="btn-primary" style="font-size:13px;padding:10px 22px;">View research poster</a>
-          </div>
+      <div class="project-info">
+        <p class="project-number">01 / 03 · Research</p>
+        <h2 class="project-title">SE-LLM <em>Loop</em></h2>
+        <p class="project-kicker">Automated Software Engineering with Large Language Models · Research under Dr. Junhua Ding</p>
+        <p class="project-impact">A research project focused on making LLM-generated code more reliable through an automated feedback loop. The pipeline gives a software engineering task to a coding model, validates the generated code, runs automated tests and code-quality checks, and returns structured failure feedback for another attempt.</p>
+        <div class="tech-chips">
+          <span class="chip">Python</span><span class="chip">LLMs</span>
+          <span class="chip">Pytest</span><span class="chip">AST</span>
+          <span class="chip">Radon</span><span class="chip">Automated Testing</span>
         </div>
-        <a href="Automated-Software-Engineering-with-LLMs-Poster.pdf" target="_blank" rel="noopener" class="research-poster-preview" aria-label="Open Automated Software Engineering with Large Language Models research poster PDF">
-          <img src="research-poster-preview.webp" alt="Automated Software Engineering with Large Language Models research poster by Abhiram Makkapati and Junhua Ding">
-          <span>Research poster · click to open PDF</span>
-        </a>
+        <ul class="project-features">
+          <li>Checks syntax and required program structure before running functional tests</li>
+          <li>Measures test performance, maintainability, and cyclomatic complexity across repeated attempts</li>
+          <li>Compares multiple coding tools and records code, feedback, errors, metrics, and experiment results</li>
+        </ul>
+        <div class="project-actions">
+          <a href="Automated-Software-Engineering-with-LLMs-Poster.pdf" target="_blank" rel="noopener" class="btn-primary poster-button">View research poster</a>
+        </div>
       </div>
     </div>
 
@@ -243,34 +237,36 @@
     </div>
 
     <!-- Upcoming Projects -->
-    <div class="upcoming-projects reveal">
-      <div class="upcoming-heading">
-        <span class="chapter-label">Upcoming</span>
-        <h3>In development</h3>
-        <p>Expected by May 2027</p>
+    <div class="future-lab reveal">
+      <div class="future-lab-head">
+        <div>
+          <span class="chapter-label">Next Up</span>
+          <h3>Brewing something <em>new</em></h3>
+          <p>Three projects are currently taking shape. All are expected by May 2027.</p>
+        </div>
+        <a href="https://github.com/Abhiram-Makkapati" target="_blank" rel="noopener" class="future-github-link">Follow my GitHub for updates</a>
       </div>
-      <div class="upcoming-grid">
-        <article class="upcoming-card">
-          <span class="upcoming-index">01</span>
-          <h4>OrbitalU</h4>
-          <p>Currently in development. More project details will be added as the build progresses.</p>
-          <span class="upcoming-date">Expected May 2027</span>
-        </article>
-        <article class="upcoming-card">
-          <span class="upcoming-index">02</span>
+      <div class="future-grid">
+        <article class="future-card">
+          <div class="future-card-top"><span>01</span><span>Capstone Project</span></div>
           <h4>LocoPilot</h4>
           <p>A local AI assistant for natural-language file organization, document search, and multi-step file workflows.</p>
-          <span class="upcoming-date">Expected May 2027</span>
+          <span class="future-date">Expected May 2027</span>
         </article>
-        <article class="upcoming-card">
-          <span class="upcoming-index">03</span>
+        <article class="future-card">
+          <div class="future-card-top"><span>02</span><span>Full-Stack Project</span></div>
+          <h4>OrbitalU</h4>
+          <p>Currently in development. I’ll share the technical details and progress as the build moves forward.</p>
+          <span class="future-date">Expected May 2027</span>
+        </article>
+        <article class="future-card">
+          <div class="future-card-top"><span>03</span><span>Personal Project</span></div>
           <h4>Personal Project</h4>
-          <p>Planning in progress. The project and technical details will be added when development begins.</p>
-          <span class="upcoming-date">Expected May 2027</span>
+          <p>Planning in progress. The idea and technical details will be added once development begins.</p>
+          <span class="future-date">Expected May 2027</span>
         </article>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -353,11 +349,23 @@
     <h2 class="section-title">A little more <em>about me</em></h2>
   </div>
   <div class="hobbies-inner">
-    <article class="hobby-card reveal">
-      <span class="hobby-index">Hobby 01</span>
-      <h3>Sketching</h3>
-      <p>Uploading soon. I’ll add a few of my own sketches here once I photograph them.</p>
-    </article>
+    <div class="hobby-lab reveal">
+      <div class="hobby-lab-head">
+        <div>
+          <span class="chapter-label">Outside the terminal</span>
+          <h3>Things I enjoy <em>away from code</em></h3>
+          <p>I’ll keep adding a few personal interests here every month or two.</p>
+        </div>
+      </div>
+      <div class="hobby-grid">
+        <article class="hobby-card">
+          <div class="hobby-card-top"><span>Hobby 01</span><span>Creative</span></div>
+          <h4>Sketching</h4>
+          <p>Uploading soon. I’ll add a few of my own sketches here once I photograph them.</p>
+          <span class="hobby-status">Gallery coming soon</span>
+        </article>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -366,26 +374,7 @@
   <div class="contact-inner">
     <span class="chapter-label reveal">Contact</span>
     <h2 class="contact-title reveal" style="transition-delay:0.1s">Let's build something <em>great</em></h2>
-    <div class="avail-widget reveal" style="
-      max-width: 600px; margin: 0 auto 40px;
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.15);
-      border-radius: 100px;
-      padding: 14px 24px;
-      display: flex; align-items: center; justify-content: center;
-      gap: 12px; flex-wrap: wrap;
-      transition-delay: 0.15s;
-    ">
-      <span style="
-        width: 8px; height: 8px; border-radius: 50%;
-        background: #22c55e; flex-shrink: 0;
-        box-shadow: 0 0 0 3px rgba(34,197,94,0.25);
-        animation: availPulse 2.2s ease-in-out infinite;
-        display: inline-block;
-      "></span>
-      <span style="font-size:13.5px; font-weight:500; color:rgba(255,255,255,0.85);">Open to full-time opportunities &nbsp;·&nbsp; Happy to relocate</span>
-    </div>
-    <p class="contact-sub reveal" style="transition-delay:0.2s">I'm currently looking for full-time opportunities and I'm happy to relocate for the right role. If something here caught your eye, let's talk.</p>
+<p class="contact-sub reveal" style="transition-delay:0.2s">If something here caught your eye, let’s talk. I’m open to full-time opportunities and happy to relocate.</p>
     <div class="contact-grid reveal" style="transition-delay:0.3s">
       <a href="mailto:makkapatiabhiram@gmail.com" class="contact-link contact-link-primary">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -404,13 +393,12 @@
         Resume
       </a>
     </div>
-    <p class="contact-closing reveal" style="transition-delay:0.4s">Abhiram Makkapati · Open to Full-Time Opportunities · Happy to Relocate</p>
   </div>
 </section>
 
 <footer>
   <p>© 2026 Abhiram Makkapati.</p>
-  <p>Computer Science · UNT · Open to Full-Time Opportunities</p>
+  <p>Computer Science · University of North Texas</p>
 </footer>
 
 <!-- ══ PROJECT MODAL ══ -->
@@ -429,6 +417,6 @@
   </div>
 </div>
 
-<script src="script.js"></script>
+<script src="script.js?v=20261002-3"></script>
 </body>
 </html>

@@ -154,10 +154,10 @@ const SKILLS = [
   { name: 'C++',          cat: 'lang',    catLabel: 'Language',   level: 0.82 },
   { name: 'Python',       cat: 'lang',    catLabel: 'Language',   level: 0.85 },
   { name: 'Dart',         cat: 'lang',    catLabel: 'Language',   level: 0.80 },
-  { name: 'JavaScript',   cat: 'lang',    catLabel: 'Language',   level: 0.75 },
   { name: 'SQL',          cat: 'lang',    catLabel: 'Language',   level: 0.72 },
   // Web Development
   { name: 'HTML & CSS',   cat: 'web',     catLabel: 'Web Dev',    level: 0.88 },
+  { name: 'JavaScript',   cat: 'web',     catLabel: 'Web Dev',    level: 0.75 },
   { name: 'React',        cat: 'web',     catLabel: 'Web Dev',    level: 0.70 },
   { name: 'TypeScript',   cat: 'web',     catLabel: 'Web Dev',    level: 0.68 },
   // Mobile Development
@@ -285,13 +285,11 @@ document.querySelectorAll('.btn-primary, .btn-secondary, .contact-link').forEach
     about: () => [
       '<span class="t-green">Abhiram Makkapati</span>',
       '  Computer Science student at the University of North Texas',
-      '  Open to full-time opportunities',
-      '  Happy to relocate',
     ],
     skills: () => [
       '<span class="t-green">Tech Stack</span>',
-      '  Languages   : C++, Python, Dart, JavaScript, SQL',
-      '  Web         : HTML & CSS, React, TypeScript',
+      '  Languages   : C++, Python, Dart, SQL',
+      '  Web         : HTML & CSS, JavaScript, React, TypeScript',
       '  Mobile      : Flutter, Firebase',
       '  Dev Tools   : Git & GitHub, GitLab, VS Code, PowerShell, Terminal',
       '  CS Core     : Data Structures, Algorithms, Object-Oriented Programming, Systems Programming, Databases',
@@ -304,7 +302,7 @@ document.querySelectorAll('.btn-primary, .btn-secondary, .contact-link').forEach
       '  [01] SE-LLM Loop — automated feedback loop for LLM-generated software',
       '  [02] StyleSync   — Flutter + Firebase wardrobe organizer',
       '  [03] RideMate    — React + TypeScript shared-rides prototype',
-      '  Upcoming: OrbitalU, LocoPilot, and a personal project — expected May 2027',
+      '  Upcoming: LocoPilot, OrbitalU, and a personal project — expected May 2027',
       '  <span class="t-muted">Type "go projects" for full descriptions and links.</span>',
     ],
     experience: () => [
@@ -329,7 +327,6 @@ document.querySelectorAll('.btn-primary, .btn-secondary, .contact-link').forEach
       '  Email    : <a href="mailto:makkapatiabhiram@gmail.com" style="color:inherit">makkapatiabhiram@gmail.com</a>',
       '  LinkedIn : <a href="https://linkedin.com/in/abhirammakkapati" target="_blank" rel="noopener" style="color:inherit">linkedin.com/in/abhirammakkapati</a>',
       '  GitHub   : <a href="https://github.com/Abhiram-Makkapati" target="_blank" rel="noopener" style="color:inherit">github.com/Abhiram-Makkapati</a>',
-      '  <span class="t-muted">Open to full-time opportunities and happy to relocate.</span>',
     ],
     clear: () => '__CLEAR__',
   };
@@ -512,10 +509,12 @@ document.querySelectorAll('.btn-primary, .btn-secondary, .contact-link').forEach
   // Open project details by click or keyboard, without intercepting links.
   document.querySelectorAll('.project-card[data-project]').forEach(card => {
     card.addEventListener('click', e => {
+      if (card.dataset.project === 'sellm') return;
       if (e.target.closest('a, button')) return;
       openModal(card.dataset.project);
     });
     card.addEventListener('keydown', e => {
+      if (card.dataset.project === 'sellm') return;
       if ((e.key === 'Enter' || e.key === ' ') && e.target === card) {
         e.preventDefault();
         openModal(card.dataset.project);
